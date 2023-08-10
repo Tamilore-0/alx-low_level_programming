@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <errno.h>
 
 /**
  * main - prints to standard error
@@ -6,6 +7,6 @@
  */
 int main(void)
 {
-	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+	perror("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 	return (1);
 }
