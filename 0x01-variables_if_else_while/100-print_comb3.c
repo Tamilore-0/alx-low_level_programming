@@ -5,20 +5,22 @@
  */
 int main(void)
 {
-	int n;
-	int i;
+	int a, b;
 
-	for (n = 0; n < 9; n++)
+	for (a = 0; a < 9; a++)
 	{
-		for (i = 1; i < 10; i++)
+		for (b = 1; b < 10; b++)
 		{
-			putchar('0' + n);
-			putchar('0' + i);
-
-			if (n != 8 || i != 9)
+			if (a < b)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar('0' + a);
+				putchar('0' + b);
+
+				if (a != 8 || b != 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
