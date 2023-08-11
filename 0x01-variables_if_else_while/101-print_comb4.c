@@ -9,26 +9,26 @@ int main(void)
 
 	for (a = 0; a < 8; a++)
 	{
-		for (b = 1; b < 9; b++)
+	for (b = 1; b < 9; b++)
+	{
+		if (a < b)
 		{
-			if (a < b)
+			for (c = 2; c < 10; c++)
 			{
-				for (c = 2; c < 10; c++)
+				if (b < c)
 				{
-					if (b < c)
+					putchar(a + '0');
+					putchar(b + '0');
+					putchar(c + '0');
+					if (a != 7 || b != 8 || c != 9)
 					{
-						putchar(a + '0');
-						putchar(b + '0');
-						putchar(c + '0');
-						if (a != 7 || b != 8 || c != 9)
-						{
-							putchar(',');
-							putchar(' ');
-						}
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
 		}
+	}
 	}
 
 	putchar('\n');
