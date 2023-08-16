@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  * Return: void
  */
 void print_alphabet(void)
@@ -9,6 +9,5 @@ void print_alphabet(void)
 
 	for (c = 97; c <= 122; c++)
 		_putchar(c);
-	
 	_putchar('\n');
 }
