@@ -20,6 +20,12 @@ void print_times_table(int n)
 			for (j = 0; j <= n; j++)
 			{
 				c = i * j;
+				if (c > 99)
+				{
+					_putchar(' ');
+					_putchar(c / 100 + '0');
+					_putchar((c / 10 % 10) + '0');
+					_putchar(z % 10 + '0');
 				if (c > 9)
 				{
 					_putchar(',');
