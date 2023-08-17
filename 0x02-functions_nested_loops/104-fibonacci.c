@@ -1,24 +1,50 @@
+#include "main.h"
 #include <stdio.h>
+/**
+ * main - prints the first 98 Fibonacci numbers
+ *
+ * Return: 0
+ */
+int main(void)
+{
+	int i;
+	unsigned long f1 = 0, f2 = 1, sum;
+	unsigned long f1_h1, f1_h2, f2_h1, f2_h2;
+	unsigned long h1, h2;
 
-int main() {
-  long n1 = 1, n2 = 2;
-  long nextTerm;
-  int i;
+	for (i = 0; i < 92; i++)
+	{
+		sum = f1 + f2;
+		printf("%lu, ", sum);
 
-  printf("%ld, %ld\n", n1, n2);
+		f1 = f2;
+		f2 = sum;
+	}
 
-  for (i = 1; i <= 96; i++) {
-    nextTerm = n1 + n2;
-    printf("%ld", nextTerm);
-    n1 = n2;
-    n2 = nextTerm;
+	f1_h1 = f1 / 10000000000;
+	f2_h1 = f2 / 10000000000;
+	f1_h2 = f1 % 10000000000;
+	f2_h2 = f2 % 10000000000;
 
-    if (i == 96) {
-      printf("\n");
-    } else {
-      printf(", ");
-    }
-  }
+	for (i = 93; i < 99; i++)
+	{
+		h1 = f1_h1 + f2_h1;
+		h2 = f1_h2 + f2_h2;
+		if (f1_h2 + f2_h2 > 9999999999)
+		{
+			h1 += 1;
+			h2 %= 10000000000;
+		}
 
-  return 0;
+		printf("%lu%lu", h1, h2);
+		if (count != 98)
+			printf(", ");
+
+		f1_h1 = f2_h1;
+		f1_h2 = f2_h2;
+		f2_h1 = h1;
+		f2_h2 = h2;
+	}
+	printf("\n");
+	return (0);
 }
