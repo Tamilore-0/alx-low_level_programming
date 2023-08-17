@@ -16,9 +16,17 @@ int main(void)
 	for (i = 1; i <= 50; i++)
 	{
 		nextTerm = n1 + n2;
-		printf("%ld, ", nextTerm);
+		printf("%ld", nextTerm);
 		n1 = n2;
 		n2 = nextTerm;
+
+		if (i == 50)
+		{
+			printf("\n");
+		}
+		else
+		{
+			printf(", ");
 	}
 
 	return (0);
