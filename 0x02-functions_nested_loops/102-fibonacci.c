@@ -13,7 +13,7 @@ int main(void)
 
 	printf("%ld, %ld, ", n1, n2);
 
-	for (i = 1; i <= 50; i++)
+	for (i = 1; i <= 48; i++)
 	{
 		nextTerm = n1 + n2;
 		printf("%ld", nextTerm);
