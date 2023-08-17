@@ -37,7 +37,7 @@ int main(void)
 		}
 
 		printf("%lu%lu", h1, h2);
-		if (count != 98)
+		if (i != 98)
 			printf(", ");
 
 		f1_h1 = f2_h1;
