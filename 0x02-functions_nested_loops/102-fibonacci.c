@@ -20,7 +20,7 @@ int main(void)
 		n1 = n2;
 		n2 = nextTerm;
 
-		if (i == 50)
+		if (i == 48)
 		{
 			printf("\n");
 		}
