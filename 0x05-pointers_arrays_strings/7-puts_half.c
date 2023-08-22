@@ -29,7 +29,7 @@ void puts_half(char *str)
 			n++;
 		}
 	}
-	else if (length_of_the_string % 2)
+	else if (length_of_the_string % 2 == 0)
 	{
 		while (m < length_of_the_string)
 		{
