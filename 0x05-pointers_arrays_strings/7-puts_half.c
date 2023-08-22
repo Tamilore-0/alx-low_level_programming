@@ -12,7 +12,7 @@ void puts_half(char *str)
 	int length_of_the_string;
 	int n, m; /* length for odd and even */
 
-	while (str[i] !='\0')
+	while (str[i] != '\0')
 	{
 		i++;
 	}
@@ -29,7 +29,7 @@ void puts_half(char *str)
 			n++;
 		}
 	}
-	else
+	else if (length_of_the_string % 2)
 	{
 		while (m < length_of_the_string)
 		{
