@@ -6,7 +6,7 @@
  *
  * Return: void
  */
-void puts_half(char *str)
+ivoid puts_half(char *str)
 {
 	int i = 0;
 	int length_of_the_string;
@@ -23,7 +23,7 @@ void puts_half(char *str)
 
 	if (length_of_the_string % 2 != 0)
 	{
-		while (n < length_of_the_string)
+		while (n < length_of_the_string - 1)
 		{
 			_putchar(str[n]);
 			n += 2;
@@ -34,7 +34,7 @@ void puts_half(char *str)
 		while (m < length_of_the_string)
 		{
 			_putchar(str[m]);
-			m += 2;
+			m++;
 		}
 	}
 
