@@ -8,7 +8,7 @@
  *
  * Return: square root
  */
-int support(int num, int root)
+int _sqrt_support(int num, int root)
 {
 	if ((root * root) > num)
 	{
@@ -20,13 +20,13 @@ int support(int num, int root)
 	}
 	else
 	{
-		return (support(num, root + 1));
+		return (_sqrt_support(num, root + 1));
 	}
 }
 
 /**
  * _sqrt_recursion - returns the natural square root of a number.
- * @: the integer
+ * @n: the integer
  * Return: The square root
  */
 int _sqrt_recursion(int n)
@@ -37,6 +37,6 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (support(n, 0));
+		return (_sqrt_support(n, 0));
 	}
 }
