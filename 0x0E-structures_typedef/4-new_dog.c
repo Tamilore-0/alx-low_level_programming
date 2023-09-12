@@ -24,7 +24,7 @@ int _strlen(char *str)
  * @dest: destination string
  * Return: a pointer to destination
  */
-char *_strcpy(char *src, char *dest)
+char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
@@ -48,35 +48,30 @@ char *_strcpy(char *src, char *dest)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *ptr;
+	dog_t *new_dog;
 
-	ptr = malloc(sizeof(dog_t));
+	new_dog = malloc(sizeof(dog_t));
+	if (!new_dog)
+		return (NULL);
 
-	if (ptr == NULL)
+	new_dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	if (!new_dog->name)
 	{
+		free(new_dog);
 		return (NULL);
 	}
+	new_dog->name = _strcpy(new_dog->name, name);
 
-	ptr->name = malloc((sizeof(char) * _strlen(name) + 1));
-
-	if (ptr->name == NULL)
+	new_dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	if (!new_dog->owner)
 	{
-		free(ptr);
+		free(new_dog->name);
+		free(new_dog);
 		return (NULL);
 	}
-	ptr->name = _strcpy(name, ptr->name);
+	new_dog->owner = _strcpy(new_dog->owner, owner);
 
-	ptr->age = age;
+	new_dog->age = age;
 
-	ptr = malloc((sizeof(char) * _strlen(owner) + 1));
-
-	if (ptr->owner == NULL)
-	{
-		free(ptr->name);
-		free(ptr);
-		return (NULL);
-	}
-	ptr->owner = _strcpy(owner, ptr->owner);
-
-	return (ptr);
+	return (new_dog);
 }
