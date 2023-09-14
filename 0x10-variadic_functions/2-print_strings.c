@@ -20,10 +20,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		strings = va_arg(list, char *);
 
-		if (i > 0 && i < n)
+		if (i > 0 && separator != NULL)
 			printf("%s", separator);
 
-		printf("%s", strings);
+		if (strings == NULL)
+			printf("(nil)");
+		else
+			printf("%s", strings);
 
 	}
 	va_end(list);
