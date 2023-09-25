@@ -1,9 +1,9 @@
-section .data                      ; This defines data that will be in memory
+section .data
     hello db "Hello, Holberton",10 ; 10 is the ASCII code for newline character
     format db "%s",0              ; Format string for printf
 
-section .texti                   ; This section contains the program instructions
-    global main                  ;This line declares the main function as the entry point of the program. It's similar to the main function in a C program.
+section .text                   ; This section contains the program instructions
+    global main
 
     extern printf                ; Declare printf as an external symbol
 
