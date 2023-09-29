@@ -12,5 +12,5 @@ int get_endianness(void)
 
 	// If the first byte of the integer contains the least significant byte,
 	// return 1 (little-endian); otherwise, return 0 (big-endian).
-	return ((int)*byte);
+	return (*byte);
 }
