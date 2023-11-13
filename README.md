@@ -1,6 +1,5 @@
 # ALX Low-Level Programming Repository
-![ALX Logo](https://www.bing.com/images/search?view=detailV2&ccid=gLVJ2rr8&id=92318B35E209FD73A6D342EF0A0743AC536F61C9&thid=OIP.gLVJ2rr8Me2-4gfhaOsMSwAAAA&mediaurl=https%3a%2f%2fmedia-exp1.licdn.com%2fdms%2fimage%2fC4D0BAQHOnx_77siGUw%2fcompany-logo_200_200%2f0%2f1624457278047%3fe%3d2159024400%26v%3dbeta%26t%3dv42FMvMMI7mw8sYdyxUsse24VNwfKlXv573NroUVD3A&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.80b549dabafc31edbee207e168eb0c4b%3frik%3dyWFvU6xDBwrvQg%26pid%3dImgRaw%26r%3d0&exph=200&expw=200&q=alx+logo&simid=608043270930382938&FORM=IRPRST&ck=2142FFA24409DD045B85615F59D9D3B5&selectedIndex=31)
-Welcome to the ALX Low-Level Programming repository! This repository contains a collection of C programming concepts, each organized into dedicated directories. This repository covers a wide range of topics I have learnt being enrolled to [ALX Africa](https://www.alxafrica.com/) Software Engineering program.
+Welcome to the ALX Low-Level Programming repository! This repository contains a collection of C programming concepts, each organized into dedicated directories. This repository covers a wide range of topics I have learnt while being enrolled to [ALX Africa](https://www.alxafrica.com/) Software Engineering program.
 > #doinghardthings
 
 ## Concepts Covered
