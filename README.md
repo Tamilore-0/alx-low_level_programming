@@ -28,7 +28,8 @@ Welcome to the ALX Low-Level Programming repository! This repository contains a 
 22. [C - Doubly linked lists](./0x17-doubly_linked_lists)
 23. [C - File I/O](./0x15-file_io)
 24. [C - Custom Simple Shell](https://github.com/Janicejay/simple_shell)
-25. [C - Dynamic libraries](./0x18-dynamic_libraries)
+25. [C - Doubly linked lists](./0x17-doubly_linked_lists)
+26. [C - Dynamic libraries](./0x18-dynamic_libraries)
 
 ## Milestone Projects
 
