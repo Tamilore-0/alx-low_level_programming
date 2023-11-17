@@ -30,11 +30,13 @@ Welcome to the ALX Low-Level Programming repository! This repository contains a 
 24. [C - Custom Simple Shell](https://github.com/Janicejay/simple_shell)
 25. [C - Doubly linked lists](./0x17-doubly_linked_lists)
 26. [C - Dynamic libraries](./0x18-dynamic_libraries)
+27. [C - Stacks, Queues - LIFO, FIFO](https://github.com/Tamilore-0/monty/)
 
 ## Milestone Projects
 
 - ***Custom printf Project:*** [Custom printf](./0x11-custom_printf) - A basic re-creation of the printf function.
-- ***Custom Simple Shell Project:*** [Custom Simple Shell](https://github.com/Janicejay/simple_shell/) - Implementation of a custom C-based shell with basic functionalities, which I worked on as a collaborator.
+- ***Custom Simple Shell Project:*** [Custom Simple Shell](https://github.com/Janicejay/simple_shell/) - An Implementation of a custom C-based shell with basic functionalities, which I worked on as a collaborator.
+- ***Custom monty project:*** [Custom monty interpreter](https://github.com/Tamilore-0/monty/) - A basic re-creation of a custom C-based monty bytecode interpreter.
 
 ### [About ALX](https://www.alxafrica.com/about/)
 ALX provides technology training to accelerate the career trajectory of young Africans. By equipping them with practical and technical skills, we help them thrive in today's digital economy.
