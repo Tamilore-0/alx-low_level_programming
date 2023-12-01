@@ -1,5 +1,10 @@
 #include "hash_tables.h"
 
+/**
+ * hash_table_print - Prints a hash table with chaining.
+ *
+ * @ht: Pointer to the hash table to be printed.
+ */
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *current;
