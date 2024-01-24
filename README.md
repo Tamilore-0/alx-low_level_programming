@@ -1,6 +1,5 @@
 # ALX Low-Level Programming Repository
 Welcome to my ALX Low-Level Programming repository! This repository contains a collection of C programming concepts, each organized into dedicated directories. This repository covers a wide range of topics I have learnt while being enrolled to [ALX Africa](https://www.alxafrica.com/) Software Engineering program.
-> #doinghardthings
 
 ## Concepts Covered
 
@@ -21,20 +20,17 @@ Welcome to my ALX Low-Level Programming repository! This repository contains a c
 15. [C - Structures, typedef](./0x0E-structures_typedef)
 16. [C - Function pointers](./0x0F-function_pointers)
 17. [C - Variadic functions](./0x10-variadic_functions)
-18. [C - Custom printf](./0x11-printf)
-19. [C - Bit manipulation](./0x14-bit_manipulation)
-20. [C - Singly linked lists](./0x12-singly_linked_lists)
-21. [C - More singly linked lists](./0x13-more_singly_linked_lists)
-22. [C - Doubly linked lists](./0x17-doubly_linked_lists)
-23. [C - File I/O](./0x15-file_io)
-24. [C - Custom Simple Shell](https://github.com/Janicejay/simple_shell)
-25. [C - Doubly linked lists](./0x17-doubly_linked_lists)
-26. [C - Dynamic libraries](./0x18-dynamic_libraries)
-27. [C - Stacks, Queues - LIFO, FIFO](https://github.com/Tamilore-0/monty/)
-28. [C - Makefiles](./0x1C-makefiles)
+18. [C - Bit manipulation](./0x14-bit_manipulation)
+19. [C - Singly linked lists](./0x12-singly_linked_lists)
+20. [C - More singly linked lists](./0x13-more_singly_linked_lists)
+21. [C - Doubly linked lists](./0x17-doubly_linked_lists)
+22. [C - File I/O](./0x15-file_io)
+23. [C - Doubly linked lists](./0x17-doubly_linked_lists)
+24. [C - Dynamic libraries](./0x18-dynamic_libraries)
+25. [C - Makefiles](./0x1C-makefiles)
 
-## Milestone Projects
-
+## Milestone C Projects
+> **NOTE:** Some are not in this directory
 - ***Custom printf Project:*** [Custom printf](./0x11-custom_printf) - A basic re-creation of the printf function.
 - ***Custom Simple Shell Project:*** [Custom Simple Shell](https://github.com/Janicejay/simple_shell/) - An Implementation of a custom C-based shell with basic functionalities, which I worked on as a collaborator.
 - ***Custom monty project:*** [Custom monty interpreter](https://github.com/Tamilore-0/monty/) - A basic re-creation of a custom C-based monty bytecode interpreter.
