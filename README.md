@@ -1,5 +1,5 @@
 # ALX Low-Level Programming Repository
-Welcome to the ALX Low-Level Programming repository! This repository contains a collection of C programming concepts, each organized into dedicated directories. This repository covers a wide range of topics I have learnt while being enrolled to [ALX Africa](https://www.alxafrica.com/) Software Engineering program.
+Welcome to my ALX Low-Level Programming repository! This repository contains a collection of C programming concepts, each organized into dedicated directories. This repository covers a wide range of topics I have learnt while being enrolled to [ALX Africa](https://www.alxafrica.com/) Software Engineering program.
 > #doinghardthings
 
 ## Concepts Covered
@@ -31,6 +31,7 @@ Welcome to the ALX Low-Level Programming repository! This repository contains a 
 25. [C - Doubly linked lists](./0x17-doubly_linked_lists)
 26. [C - Dynamic libraries](./0x18-dynamic_libraries)
 27. [C - Stacks, Queues - LIFO, FIFO](https://github.com/Tamilore-0/monty/)
+28. [C - Makefiles](./0x1C-makefiles)
 
 ## Milestone Projects
 
