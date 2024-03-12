@@ -44,13 +44,13 @@ int binary_search(int *array, size_t size, int value)
 
 
 /**
- * display - Displays the subarray being searched.
+ * binary_display - Displays the subarray being searched.
  *
  * @low: The lower index of the subarray.
  * @high: The upper index of the subarray (exclusive).
  * @array: Pointer to the array containing elements to display.
  */
-void display(int low, int high, int *array)
+void binary_display(int low, int high, int *array)
 {
 	int i;
 
