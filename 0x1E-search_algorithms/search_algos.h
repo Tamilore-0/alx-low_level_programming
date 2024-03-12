@@ -11,6 +11,8 @@ int advanced_binary(int *array, size_t size, int value);
 void binary_display(int low, int high, int *array);
 /* support function for exponential search */
 void exponential_display(int low, int high, int *array);
+/* support function for advanced binary search */
+void advanced_binary_display(int low, int high, int *array);
 
 
 #endif /* SEARCH_ALGOS_H */
