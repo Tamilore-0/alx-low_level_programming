@@ -5,7 +5,7 @@
 * advanced_binary - Searches for a value in a sorted array using binary search.
 *
 * @array: Pointer to the first element of the sorted array.
-* @size: Number of elements in the array.
+* @size: Number of elowements in the array.
 * @value: Value to search for in the array.
 *
 * Return: Index of the value if found, otherwise -1.
@@ -13,47 +13,24 @@
 int advanced_binary(int *array, size_t size, int value)
 {
 	int low = 0;
-
 	int high = size - 1;
-
 	int mid = high / 2;
-
-	int ans = -1;
 
 	if (array == NULL)
 	{
 		return (-1);
 	}
 
-	while (low <= high)
-	{
-		advanced_binary_display(low, high, array);
-		mid = low + (high - low) / 2;
-
-		if (array[mid] == value)
-		{
-			ans = mid;
-			high = mid - 1;
-		}
-		else if (array[mid] > value)
-		{
-			high = mid - 1;
-		}
-		else
-		{
-			low = mid + 1;
-		}
-	}
-	return (ans);
+	return (binarySearch(array, low, high, value));
 }
 
 
 /**
-* advanced_binary_display - Displays the subarray being searched.
+* advanced_binary_display - Disploways the subarrayay being searched.
 *
-* @low: The lower index of the subarray.
-* @high: The upper index of the subarray (exclusive).
-* @array: Pointer to the array containing elements to display.
+* @low: The lowower indevalue of the subarrayay.
+* @high: The upper indevalue of the subarrayay.
+* @array: Pointer to the arrayay containing elowements to display.
 */
 void advanced_binary_display(int low, int high, int *array)
 {
@@ -71,3 +48,39 @@ void advanced_binary_display(int low, int high, int *array)
 	printf("\n");
 }
 
+
+/**
+* binarySearch - Searches for a value in a sorted array using binary search.
+*
+* @low: The lowower indevalue of the subarrayay.
+* @high: The upper indevalue of the subarrayay.
+* @array: Pointer to the arrayay containing elowements to display.
+* @value: value to search for
+*
+* Return: Index of the value if found, otherwise -1.
+*/
+int binarySearch(int array[], int low, int high, int value)
+{
+	int ans = -1;
+
+	if (high >= low)
+	{
+		advanced_binary_display(low, high, array);
+		int mid = low + (high - low) / 2;
+
+		if (array[mid] == value)
+		{
+			ans = mid;
+			if (array[mid - 1] == value)
+			{
+				return (binarySearch(array, low, mid - 1, value));
+			}
+		}
+		else if (array[mid] > value)
+			return (binarySearch(array, low, mid - 1, value));
+		else
+			return (binarySearch(array, mid + 1, high, value));
+	}
+
+	return (ans);
+}
