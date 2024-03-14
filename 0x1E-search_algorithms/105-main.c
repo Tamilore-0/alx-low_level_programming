@@ -29,7 +29,7 @@ int main(void)
 	res =  jump_list(list, size, 2);
 	printf("Found %d at index: %lu\n\n", 2, res->index);
 	res =  jump_list(list, size, 999);
-	
+
 	if (res != NULL)
 	{
 		printf("yes res is not null\n");
